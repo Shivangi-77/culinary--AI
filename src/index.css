@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F8F5EC] font-body text-[#292D28];
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg transition-all duration-300 font-medium;
+  }
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700;
+  }
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700;
+  }
+  .input-field {
+    @apply w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-primary-400 focus:border-primary-400 outline-none transition-all duration-300;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden;
+  }
+  .recipe-section {
+    @apply py-4;
+  }
+  .recipe-title {
+    @apply text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-gray-900 mb-2;
+  }
+  .recipe-subtitle {
+    @apply text-xl font-heading font-semibold text-gray-800 mb-2;
+  }
+  .recipe-list {
+    @apply list-disc list-inside space-y-1 ml-2;
+  }
+  .recipe-step {
+    @apply mb-4 last:mb-0;
+  }
+  .recipe-step-number {
+    @apply font-heading font-semibold text-primary-500 text-lg mr-2;
+  }
+}
+
+.pattern-background {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0f0f0' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
